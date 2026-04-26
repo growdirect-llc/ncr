@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# Editor scratch
+*.swp
+.~lock.*
+
+# Obsidian user-local state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/graph.json
+.obsidian/app.json
+.obsidian/appearance.json
+.obsidian/plugins/
+.obsidian/community-plugins.json
+.smart-env
