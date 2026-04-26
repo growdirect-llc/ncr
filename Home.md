@@ -5,31 +5,36 @@ tags: [home, overview]
 
 # Canary for NCR Counterpoint
 
-**Partner vault for NCR Counterpoint VARs.** This site is the co-sell resource for adding Canary's analytics and operations layer on top of the Counterpoint platform your customers already run.
+**Partner vault for NCR Counterpoint VARs.** The co-sell resource for adding Canary's analytics and agent layer on top of the Counterpoint platform your customers already run.
 
-## What Canary adds
+## What Canary is
 
-Counterpoint is the transaction engine. It does what it does — sales, receiving, inventory, customer records — extremely well. What it doesn't do: multi-store analytics, loss prevention detection, open-to-buy enforcement, and distribution optimization. Canary sits above the Counterpoint API, reads the full Document history, and adds the enterprise operations layer that makes a Counterpoint installation worth more.
+Canary is an agent-native store operating system that runs above NCR Counterpoint. Two surfaces: an **analytics spine** (13 ARTS modules that turn Counterpoint data into operational intelligence) and **ALX/VSM** (the store agent — the MCP endpoint that connects customer Claudes to the store in real time).
 
-No changes to your customer's POS workflow. No replacement of Counterpoint. An additive layer that reads the API and produces answers Counterpoint's UI doesn't.
+Counterpoint is the transaction engine. Canary is what makes it intelligent.
 
-## Two lanes
+## The agent model
 
-| Lane | For |
+Canary runs a hub-and-spoke agent network. Every store gets an ALX (Virtual Store Manager) — the store's MCP endpoint. A back office hub connects all store agents and monitors cross-store LP, transfers, OTB, and device health via Module A. The hub scales to corporate level regardless of org structure.
+
+**No other NCR Counterpoint VAR has built this. No enterprise physical retail POS has a native MCP endpoint as of April 2026.**
+
+→ [Agent network — how it works](agents/index)
+
+## Site sections
+
+| Section | For |
 |---|---|
-| [Verticals](verticals/lawn-garden) | Your customer conversations — pain points, module fit, customer profiles by vertical |
-| [Modules](modules/index) | The Canary spine on Counterpoint — L1–L4 process decomposition, Counterpoint endpoint mapping |
-| [Why Canary](why-canary/index) | The positioning, TAM, and co-sell story |
-| [Integration](integration/index) | Counterpoint API surface Canary connects to |
-| [Sandbox](sandbox/index) | How to get to a demo |
-| [Pitch](pitch/index) | Leave-behinds to share with prospects |
+| [Agent Network](agents/index) | The VSM architecture, hub-and-spoke model, MCP stack, roadmap |
+| [Verticals](verticals/lawn-garden) | Vertical playbooks — L&G full, Armstrong proof case, others in development |
+| [Modules](modules/index) | L1–L4 process decomposition of the 13-module Canary Retail Spine |
+| [Why Canary](why-canary/index) | Positioning, market context, co-sell story |
+| [NCR Context](ncr-context/index) | NCR platform analysis — why they can't build Layer 4 |
+| [Integration](integration/index) | Counterpoint API surface and connection model |
+| [Sandbox](sandbox/index) | Path to demo |
+| [Pitch](pitch/index) | Leave-behinds |
 
 ## Verticals covered
 
-Canary's Counterpoint integration is vertical-agnostic at the API level. The playbooks, pain catalogs, and module priorities below are vertical-specific.
-
-- [Lawn & Garden](verticals/lawn-garden) — lead vertical; full playbook
-- [Feed & Tack](verticals/feed-tack) — coming soon
-- [Gun & Sporting Goods](verticals/gun) — coming soon
-- [Beverage](verticals/beverage) — coming soon
-- [Wine & Spirits](verticals/wine-spirits) — coming soon
+- [Lawn & Garden](verticals/lawn-garden) — lead vertical; full playbook + [Armstrong proof case](verticals/armstrong)
+- [Feed & Tack](verticals/feed-tack), [Gun & Sporting](verticals/gun), [Beverage](verticals/beverage), [Wine & Spirits](verticals/wine-spirits) — in development

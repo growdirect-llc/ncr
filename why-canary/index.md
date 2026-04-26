@@ -1,47 +1,61 @@
 ---
 title: Why Canary on Counterpoint
-tags: [positioning, tam, co-sell]
+tags: [positioning, tam, co-sell, market]
 ---
 
 # Why Canary on Counterpoint
 
 ## The one-sentence version
 
-Counterpoint is the transaction engine. Canary is the analytics and operations layer that makes a Counterpoint installation worth more — without changing any POS workflow.
+Counterpoint is the transaction engine. Canary is the agent-native operating layer that makes a Counterpoint installation intelligent — accessible to both the operator (analytics, LP, OTB) and the customer's own AI agent (via ALX over MCP).
 
-## What Counterpoint does well
+## Two surfaces, one product
 
-- Transactions: sales, returns, voids, layaways, work orders
-- Inventory: item master, receiving, transfers, adjustments
-- Customer: loyalty, account pricing, AR/credit
-- Multi-company and multi-location
-- Vertical-specific configuration (via VARs like Rapid Garden POS)
+**Analytics spine:** 13 ARTS modules that turn Counterpoint's Document history into operational intelligence — loss prevention, distribution recommendations, demand forecasting, OTB enforcement, commercial account risk. The operator surface.
+
+**ALX / VSM:** The store's MCP endpoint. Answers customer Claudes in real time. Diagnoses plant symptoms, checks inventory, settles transactions to account. The customer surface. See [Agent Network](../agents/index).
 
 ## What Counterpoint doesn't surface
 
-| Gap | Canary module |
+| Gap | Canary module / agent |
 |---|---|
-| Loss prevention detection — rules over the audit log | Q |
+| Loss prevention detection — rules over the audit log | Q + Fox (case management) |
 | Multi-store transfer loss reconciliation | D |
 | Demand forecasting and OTB enforcement | J |
 | B2B commercial account risk scoring | C |
 | Multi-store distribution recommendations | D |
-| Analytics accessible via natural language | Owl |
-| Case management for LP investigations | Fox |
+| Analytics via natural language | Owl |
+| Customer agent interface (MCP) | ALX / VSM |
+| Cross-store device heartbeat | A (Module A) + back office hub |
 
 ## The co-sell story for VARs
 
-You already own the Counterpoint relationship. Your customers trust you for implementation, training, and support. Canary adds the enterprise analytics layer — the thing your customers couldn't afford to build themselves, now available through you.
+You already own the Counterpoint relationship. Your customers trust you for implementation, training, and support. Canary adds the enterprise analytics layer AND the agent interface — the things your customers couldn't build themselves, available through you.
 
-No additional hardware. No change to the POS workflow. No replacement of Counterpoint. Canary is a software layer above the API that makes the data your customers already have tell them things they couldn't see before.
+No additional hardware. No change to the POS workflow. Canary reads the API and adds intelligence above it.
 
-**Revenue model for VARs:** Canary is a recurring SaaS subscription. VAR channel pricing and margin structure: contact GrowDirect to discuss.
+## The market moment
 
-## Market context
+| Stat | Source |
+|---|---|
+| $3–5T agent-mediated consumer commerce by 2030 | McKinsey |
+| $15T B2B purchasing via agents by 2028 | Gartner |
+| 45% of consumers already use AI during buying journeys | IBM/NRF (18,000 respondents, 23 countries, Q3 2025) |
+| 97M MCP SDK downloads per month | March 2026 |
+| 0 enterprise physical retail POS with native MCP endpoint | April 2026 |
 
-- ~1,200 US garden centers are estimated Counterpoint installations across the Rapid Garden POS vertical
-- ~9,000 SMB retailers total across the Counterpoint VAR ecosystem (all verticals)
-- Counterpoint has no native LP or analytics product at the SMB tier
-- Enterprise alternatives (Aptos, Manhattan, Blue Yonder) start at $500K+; out of reach for the SMB operator
+Shopify launched MCP support in Summer 2025. Walmart built Sparky/Associate/Marty on the same principles. Google + Shopify launched UCP at NRF Jan 2026. Physical retail POS is the last frontier. Counterpoint VARs are positioned to move first.
 
-*Full TAM research in Brain/wiki/rapid-pos-counterpoint-market-research-tam.md — contact GrowDirect for the unabridged analysis.*
+## Why NCR won't build this
+
+NCR's batch-first architecture cannot deliver the millisecond responses MCP requires. Leadership is financial (not AI-native). The VAR channel model means they'd have to cannibalise the partners who reach mid-market retail if they tried.
+
+**NCR cannot control what VARs build on top of Counterpoint.** The agent layer is yours to build.
+
+Full analysis: [NCR Context](../ncr-context/index)
+
+## The opportunity window
+
+NCR is financially stressed (stock -40%, revenue -13 to -18% projected 2026). No competitor VAR has built an MCP layer. The garden center vertical has 130+ years of domain knowledge that has never been machine-readable — the Armstrong proof case makes this concrete.
+
+The window to establish Layer 4 in the Counterpoint VAR channel is open. It will not stay open indefinitely.
