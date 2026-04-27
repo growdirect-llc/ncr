@@ -99,3 +99,49 @@ to `_site/`, which GitHub Pages serves from `ncr.growdirect.io`.
 
 Coverage audit: `GrowDirect/Brain/wiki/ncr-vault-gap-ledger.md` (2026-04-27).
 25 Covered, 7 Forward-only, 3 back-filled during wiring.
+
+---
+
+## Vault sync workflow
+
+When asked to sync, refresh, or update this vault:
+
+1. **Identify changed articles** in `GrowDirect/Brain/wiki/` and
+   `GrowDirect/Brain/projects/` since last sync (check `last-compiled`
+   frontmatter vs previous sync date).
+
+2. **Scope filter** — copy only NCR Counterpoint-relevant articles
+   (see Key Brain Articles section above for the full list). New articles
+   matching `ncr-*`, `canary-*`, `retail-*`, `crb-*`, `brief-ncr-*`,
+   and `growdirect-the-*` are candidates.
+
+3. **Strip internal provenance** — remove any article with
+   `classification: confidential`, client names, Linear issue numbers,
+   founder-operator provenance notes, or cap table references.
+
+4. **Verify links** — Obsidian `[[wikilinks]]` pointing outside the
+   vault break on publish. Replace with plain text or external URLs.
+
+5. **Update `projects/Canary.md` (if present)** — confirm the MOC
+   reflects all articles now in the vault.
+
+6. **Commit and push** — `git add . && git commit -m "ncr: sync from Brain $(date +%Y-%m-%d)"`
+   GitHub Pages deploys automatically from `main`.
+
+7. **Note sync date** — update the `last-sync` field below.
+
+**last-sync: 2026-04-27**
+
+---
+
+## What stays out of this vault
+
+- Angel, Cove, Seacove content
+- HOA / WPBCA governance documents
+- Internal financial projections or cap table
+- Secure-era client artifacts (even scrubbed)
+- Memory bus architecture internals
+- Raw inbox / unprocessed intake files
+- Team profiles and compensation data
+- Any article with `classification: confidential`
+- CATz-only positioning content not relevant to NCR Counterpoint VARs
