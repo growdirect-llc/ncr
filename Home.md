@@ -25,6 +25,7 @@ Canary runs a hub-and-spoke agent network. Every store gets an ALX (Virtual Stor
 
 | Section | For |
 |---|---|
+| [**Deployment Guide**](deployment/index) | **Start here** — Frame, People, Agents, Model, and Blueprint for all 6 Phase 1 modules |
 | [Agent Network](agents/index) | The VSM architecture, hub-and-spoke model, MCP stack, roadmap |
 | [Verticals](verticals/lawn-garden) | Vertical playbooks — L&G full, Armstrong proof case, others in development |
 | [Modules](modules/index) | L1–L4 process decomposition of the 13-module Canary Retail Spine |
