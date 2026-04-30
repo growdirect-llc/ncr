@@ -30,8 +30,10 @@ Canary runs a hub-and-spoke agent network. Every store gets an ALX (Virtual Stor
 | [Verticals](verticals/lawn-garden) | Vertical playbooks — L&G full, Armstrong proof case, others in development |
 | [Modules](modules/index) | L1–L4 process decomposition of the 13-module Canary Retail Spine |
 | [Why Canary](why-canary/index) | Positioning, market context, co-sell story |
+| [Modernization](modernization/index) | The five-phase Counterpoint modernization path — observer to spine to platform |
 | [NCR Context](ncr-context/index) | NCR platform analysis — why they can't build Layer 4 |
 | [Integration](integration/index) | Counterpoint API surface and connection model |
+| [Specs](specs/index) | Architecture and integration depth — master SDD, endpoint catalog, document model, OpenAPI spec |
 | [Sandbox](sandbox/index) | Path to demo |
 | [Pitch](pitch/index) | Leave-behinds |
 
