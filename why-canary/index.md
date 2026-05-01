@@ -42,9 +42,8 @@ No additional hardware. No change to the POS workflow. Canary reads the API and 
 | $15T B2B purchasing via agents by 2028 | Gartner |
 | 45% of consumers already use AI during buying journeys | IBM/NRF (18,000 respondents, 23 countries, Q3 2025) |
 | 97M MCP SDK downloads per month | March 2026 |
-| 0 enterprise physical retail POS with native MCP endpoint | April 2026 |
 
-Shopify launched MCP support in Summer 2025. Walmart built Sparky/Associate/Marty on the same principles. Google + Shopify launched UCP at NRF Jan 2026. Physical retail POS is the last frontier. Counterpoint VARs are positioned to move first.
+Shopify launched MCP support in Summer 2025. Walmart built Sparky/Associate/Marty on the same principles. Google + Shopify launched UCP at NRF Jan 2026.
 
 ## Why NCR won't build this
 
@@ -56,6 +55,6 @@ Full analysis: [NCR Context](../ncr-context/index)
 
 ## The opportunity window
 
-NCR is financially stressed (stock -40%, revenue -13 to -18% projected 2026). No competitor VAR has built an MCP layer. The garden center vertical has 130+ years of domain knowledge that has never been machine-readable — the Armstrong proof case makes this concrete.
+NCR is in a financial transition (stock -40%, revenue -13 to -18% projected 2026). The garden center vertical carries 130+ years of domain knowledge that has not been machine-readable — the Armstrong proof case makes this concrete.
 
-The window to establish Layer 4 in the Counterpoint VAR channel is open. It will not stay open indefinitely.
+Layer 4 in the Counterpoint VAR channel is the place where the agent interface gets built; the substrate already exists.

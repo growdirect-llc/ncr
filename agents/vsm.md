@@ -61,9 +61,7 @@ Two agents. One conversation. No human required unless ALX decides otherwise.
 
 ## Why this is Canary's differentiator
 
-Every other analytics layer on Counterpoint is a dashboard that humans read. ALX is an agent that *acts*. The spine modules (T/Q/D/J) are the knowledge engine. ALX is the interface. A VAR that deploys Canary doesn't just give retailers better reports — they give retailers a store agent that any customer's AI can talk to.
-
-No other NCR Counterpoint VAR has built this. No other entity will build it before the window closes.
+Standard analytics layers on Counterpoint are dashboards that humans read. ALX is an agent that *acts*. The spine modules (T/Q/D/J) are the knowledge engine. ALX is the interface. A VAR that deploys Canary doesn't just give retailers better reports — they give retailers a store agent that any customer's AI can talk to.
 
 ## Domain knowledge: the L&G example
 

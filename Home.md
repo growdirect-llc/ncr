@@ -17,8 +17,6 @@ Counterpoint is the transaction engine. Canary is what makes it intelligent.
 
 Canary runs a hub-and-spoke agent network. Every store gets an ALX (Virtual Store Manager) — the store's MCP endpoint. A back office hub connects all store agents and monitors cross-store LP, transfers, OTB, and device health via Module A. The hub scales to corporate level regardless of org structure.
 
-**No other NCR Counterpoint VAR has built this. No enterprise physical retail POS has a native MCP endpoint as of April 2026.**
-
 → [Agent network — how it works](agents/index)
 
 ## Site sections

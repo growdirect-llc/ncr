@@ -52,7 +52,7 @@ The VAR owns Layer 4. NCR owns Layers 1–3. Both survive. The retailer wins. Se
 
 ## The window
 
-NCR is financially stressed, leadership is focused on cash flow, and no one at the top has retail AI vision. The window to establish the MCP layer in the NCR VAR channel is open right now. Shopify launched MCP in Summer 2025. Walmart's Sparky launched the same year. The enterprise reference points exist. Physical retail POS is the last frontier — and Counterpoint VARs are positioned to move first.
+NCR is in a financial transition, with leadership focused on cash flow and no public retail-AI roadmap. The MCP layer in the NCR VAR channel is the place where the agent interface gets built. Shopify launched MCP in Summer 2025; Walmart's Sparky launched the same year. The enterprise reference points exist. Physical retail POS is the next surface where MCP adoption applies.
 
 ## Competitive context
 
@@ -63,7 +63,7 @@ NCR is financially stressed, leadership is focused on cash flow, and no one at t
 | SMB cloud | Square, Shopify | Shopify: MCP live (Summer 2025). Square: no MCP |
 | Restaurant | Toast | No retail MCP |
 
-**No enterprise physical retail POS has a native MCP endpoint as of April 2026.** First mover in this category is available.
+The competitive table reflects MCP endpoint posture as of April 2026 across the surveyed tiers. Physical retail POS adoption of MCP is early.
 
 ## Market size
 

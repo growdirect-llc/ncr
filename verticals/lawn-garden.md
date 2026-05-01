@@ -25,7 +25,7 @@ All three are Canary targets. Priority order for initial channel outreach: regio
 
 ## Pain catalog
 
-These 10 pain themes emerged from public Counterpoint community research. Validate and prioritize against Bart's customer knowledge.
+These 10 pain themes emerged from public Counterpoint community research. Validate and prioritize against VAR customer knowledge.
 
 | # | Pain | Canary module | Counterpoint gap |
 |---|---|---|---|

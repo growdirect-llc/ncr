@@ -76,9 +76,9 @@ None of this is currently machine-readable. It lives in staff heads, paper manua
 | ESOP ownership | Favorable — local decisions, no corporate IT bottleneck |
 | Multi-location scale | Right — 31 stores is a real distribution and LP problem |
 
-## Open questions (for the Bart conversation)
+## Open questions for VAR follow-up
 
-- Is Armstrong on NCR Counterpoint? (RapidPOS likely knows)
+- Is Armstrong on NCR Counterpoint? (Regional VAR likely knows)
 - Who owns IT/Operations decisions at Armstrong?
 - Does Armstrong have any existing digital advisor or chatbot?
-- Is Bart aware of Armstrong as a prospect? Does he have a relationship?
+- Is the VAR aware of Armstrong as a prospect? Existing relationship?

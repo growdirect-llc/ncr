@@ -9,7 +9,7 @@ Getting Canary connected to a Counterpoint instance for evaluation requires an A
 
 ## Option 1: Rapid Garden POS shared sandbox
 
-Rapid Garden POS maintains a shared Counterpoint sandbox environment for partner evaluation. Contact Bart McCleskey (bart@rapidpos.com) to request sandbox credentials.
+Rapid Garden POS maintains a shared Counterpoint sandbox environment for partner evaluation. Sandbox credentials are issued through the Rapid POS partner channel — request via your established VAR contact.
 
 What you get: a Counterpoint installation with representative L&G data — items, customers, transactions, inventory positions, transfers. Enough to run all five priority modules (T, Q, D, J, C) end-to-end.
 
