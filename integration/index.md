@@ -11,7 +11,7 @@ Canary connects to NCR Counterpoint via the Counterpoint REST API. This section 
 
 Canary uses **polling, not webhooks**. Counterpoint does not push events; Canary pulls on a configurable cadence (60s steady-state, 15s during active store hours).
 
-Authentication: Counterpoint API key + company ID. Canary requires a read-tier key for all standard modules. Module J (PO write-back, v3 optional) requires a write-tier key.
+Authentication: Counterpoint API key + company ID. Canary requires a read-tier key for all standard modules. Module O (PO write-back, v3 optional) requires a write-tier key.
 
 ## The Document omnibus
 

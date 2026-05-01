@@ -1,9 +1,10 @@
 ---
-title: L — Labor & Workforce
+title: L — Labor
+nav_order: 12
 tags: [module, counterpoint, stub]
 ---
 
-# L — Labor & Workforce
+# L — Labor
 
 **Coverage:** ◐ Design complete
 **Ring:** v3 design complete

@@ -46,7 +46,7 @@ These 10 pain themes emerged from public Counterpoint community research. Valida
 |---|---|---|
 | 1 | Q — Loss Prevention | Every Counterpoint L&G install has the audit substrate; detection layer is universal |
 | 2 | D — Distribution | Multi-location transfer loss and rebalancing are felt pains at any chain |
-| 3 | J — Forecast & Order | OTB enforcement matters most for spring-driven cash flow |
+| 3 | J — Orders | OTB enforcement matters most for spring-driven cash flow |
 | 4 | C — Commercial | Landscaper account intelligence is a revenue-protection play |
 | 5 | T — Transaction Pipeline | Foundation for all of the above; ships first |
 
@@ -83,7 +83,7 @@ Key angles by audience:
 ## See also
 
 - [Module Q — Loss Prevention](../modules/Q-loss-prevention)
-- [Module J — Forecast & Order](../modules/J-forecast-order)
+- [Module O — Orders](../modules/O-orders)
 - [Module D — Distribution](../modules/D-distribution)
 - [Integration — Counterpoint API surface](../integration/index)
 - [Sandbox — path to demo](../sandbox/index)

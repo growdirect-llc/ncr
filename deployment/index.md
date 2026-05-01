@@ -17,10 +17,10 @@ Phase 1 delivers six interconnected modules:
 
 | Module | What it does |
 |---|---|
-| [S — Store & Device](../modules/S-space-range-display) | Establishes operational context: which store, which station, which session |
+| [S — Store & Device](../modules/S-space) | Establishes operational context: which store, which station, which session |
 | [I — Item Catalog](../modules/index) | Sets the cost and margin floor for every item sold |
 | [F — Finance/Tender](../modules/F-finance) | Classifies how money moves: cash, card, AR, gift card |
-| [R — Customer](../modules/R-customer) | Identifies who is buying, their tier, and their AR standing |
+| [C — Customer](../modules/C-customer) | Identifies who is buying, their tier, and their AR standing |
 | [D — Distribution/Inventory](../modules/D-distribution) | Tracks on-hand quantity against what the register reports sold |
 | [Q — Loss Prevention](../modules/Q-loss-prevention) | Detects when S/I/F/R/D signals diverge from expected patterns |
 
@@ -155,7 +155,7 @@ SUBSTRATES
         │
         ▼
 ENRICHMENT
-  R — Customer         Who bought? Known account or walk-in?
+  C — Customer         Who bought? Known account or walk-in?
   D — Inventory        What should be on the shelf vs. what the register shows?
         │
         ▼
@@ -206,7 +206,7 @@ A transaction evaluated before Phase B completes would have no item cost floor a
 
 **Phase 1 scope:** Store and station configuration. Multi-company (multiple companies on one Counterpoint server) is deferred.
 
-→ [Module S article](../modules/S-space-range-display)
+→ [Module S article](../modules/S-space)
 
 ---
 
@@ -253,7 +253,7 @@ Every payment line on every transaction is classified at parse time. The raw pay
 
 ---
 
-### R — Customer
+### C — Customer
 
 **What it does:** Identifies who is buying and what their standing is — account tier, AR balance, authorized discount level. A 40% discount to a Gold AR account is expected. The same discount to a walk-in is a red flag.
 
@@ -268,7 +268,7 @@ Every payment line on every transaction is classified at parse time. The raw pay
 
 **Phase 1 scope:** Customer identity and tier context. Loyalty manipulation rules seeded but not surfaced until Phase 2.
 
-→ [Module R article](../modules/R-customer)
+→ [Module C article](../modules/C-customer)
 
 ---
 

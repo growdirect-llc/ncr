@@ -39,7 +39,7 @@ Spring 2026's transaction tail is the richest signal we will see for nine months
 
 Three months to finish Phase 1 and lock the stack down before peak. This is where rule thresholds get calibrated to the retailer's seasonal staff patterns and where multi-store reconciliation comes online.
 
-- Module R (Customer) ingestion live
+- Module C (Customer) ingestion live
 - Module N (Device) telemetry live
 - Module D (Distribution) — transfer-loss reconciliation operational
 - Performance testing against Holiday-equivalent transaction load
@@ -64,22 +64,22 @@ What we explicitly do **not** promise at Holiday 2026: customer-facing agent tra
 
 Holiday data is the input for Phase 2. Three modules enter build:
 
-- **Module C (Commercial)** — B2B/landscaper account risk scoring; AR aging exception detection
+- **Module M (Merchandising)** — B2B/landscaper account risk scoring; AR aging exception detection
 - **Module F (Finance)** — supplier invoice 3-way match (PO + ASN + invoice); COGS posting via OAuth bridge to the merchant's QuickBooks / Xero
-- **Module J (Forecast & Order)** — demand forecast using the full 12-month + holiday baseline; OTB enforcement; replenishment recommendation engine
+- **Module O (Orders)** — demand forecast using the full 12-month + holiday baseline; OTB enforcement; replenishment recommendation engine
 
 Multi-store pilot expansion: a second pilot site joins, then a third. Each addition stress-tests multi-tenant scale before the spring peak.
 
 ## Spring 2027 — the L&G peak (Apr–May 2027)
 
-L&G's spring is 40–60% of annual revenue. It is where Module J earns its keep or doesn't. Forecast, OTB, and buyer workflow run live for the first time against real seasonal demand.
+L&G's spring is 40–60% of annual revenue. It is where Module O earns its keep or doesn't. Forecast, OTB, and buyer workflow run live for the first time against real seasonal demand.
 
 What we expect to demonstrate:
 
-- Module J producing demand forecasts that match buyer instinct on the routine SKUs and surface insight on the surprises
+- Module O producing demand forecasts that match buyer instinct on the routine SKUs and surface insight on the surprises
 - OTB enforcement preventing overbuy without slowing the buyer down
 - Multi-store transfer recommendations actively executed against transit inventory
-- Module C surfacing landscaper account credit risk before the spring AR balance balloons
+- Module M surfacing landscaper account credit risk before the spring AR balance balloons
 
 This is where the platform stops being an LP-and-analytics layer and becomes merchandising infrastructure.
 
@@ -88,7 +88,7 @@ This is where the platform stops being an LP-and-analytics layer and becomes mer
 Two parallel tracks:
 
 - **Vertical pack development** — Feed & Tack, Gun & Sporting, Beverage, Wine & Spirits. Each pack defines its own detection rules, pricing patterns, and seasonal calendar overlay; all built on the same 13-module spine.
-- **Phase 3 module design** — Module S (Space, Range, Display) v3, Module P (Pricing & Promotion) v3, Module L (Labor) v3, Module W (Work Execution) v3. These are v3 capabilities with longer build cycles.
+- **Phase 3 module design** — Module S (Space) v3, Module P (Pricing & Promotion) v3, Module L (Labor) v3, Module E (Execution) v3. These are v3 capabilities with longer build cycles.
 
 Multi-VAR onboarding: a second Counterpoint VAR begins channel partnership; the Rapid POS deployment becomes the published proof case.
 

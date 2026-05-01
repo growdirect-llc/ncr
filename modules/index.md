@@ -11,7 +11,7 @@ The Canary Retail Spine is a 13-module ARTS-native operating layer. On a Counter
 | Level | What it represents |
 |---|---|
 | **L1** | Business domain (RBIS-derived: Customer, Products & Services, Merchandising, Store Ops, Corporate Finance, Workforce) |
-| **L2** | Canary module (one of 13 ARTS-prefixed modules: T, R, N, A, Q, C, D, F, J, S, P, L, W) |
+| **L2** | Canary module (one of 13 modules in workflow order: M, O, D, S, P, C, T, Q, F, A, N, L, E) |
 | **L3** | Process group within the module |
 | **L4** | Activity → Counterpoint endpoint → L&G-specific adaptation |
 
@@ -74,24 +74,24 @@ The Canary Retail Spine is a 13-module ARTS-native operating layer. On a Counter
 
 → [Full D article](D-distribution)
 
-### L2: J — Forecast & Order ◐ Partial
+### L2: J — Orders ◐ Partial
 
 > Counterpoint covers PO/PREQ/RECVR/RTV via Document family. Demand forecasting, replenishment parameters, and OTB management are Canary-native gaps.
 
 | L3 Process group | L4 highlights | L&G adaptation |
 |---|---|---|
-| J.1 Demand forecasting ★ | Canary-native; Counterpoint has no forecast endpoint | Weather-adjusted seasonal model; spring revenue 40-60% of annual — base forecast must isolate seasonality |
-| J.2 Replenishment parameters ★ | Min/max, lead time, safety stock per SKU-location | SKU lifecycle short and seasonal; catalog not stable; ad-hoc new items mid-season |
-| J.3 Open-to-Buy management ★ | OTB pyramid: plan → commit → receipt; Canary enforces guardrails | OTB critical during spring build — cash flow negative in winter shoulder; spring overbuy risk is real |
-| J.4 PO recommendation + approval | Canary plan → buyer approval → Counterpoint PO | Buyer-in-Counterpoint-UI default (v2); Canary POST-back optional (v3+) |
-| J.5 PO generation + transmission | `DOC_TYP=PO` via Document POST or buyer UI | Large nurseries: EDI-capable; mid-tier: PDF/email; hobbyist: cash-and-paper — three vendor tiers |
-| J.6 Receiving + 3-way match | `DOC_TYP=RECVR`; PO qty vs receiver qty vs invoice | Receiver with thin metadata (paper invoice) is normal — flag-and-ingest, not reject |
-| J.7 Short-ship + RTV | `DOC_TYP=RTV` | Live-goods RTV (dead-on-arrival plants) creates specific RTV pattern; distinguish from standard merchandise RTV |
-| J.8 Promotional demand isolation | Cross-module contract with P (Pricing & Promotion) | Spring promotion lift must be quarantined from next-year base or replenishment double-orders |
+| O.1 Demand forecasting ★ | Canary-native; Counterpoint has no forecast endpoint | Weather-adjusted seasonal model; spring revenue 40-60% of annual — base forecast must isolate seasonality |
+| O.2 Replenishment parameters ★ | Min/max, lead time, safety stock per SKU-location | SKU lifecycle short and seasonal; catalog not stable; ad-hoc new items mid-season |
+| O.3 Open-to-Buy management ★ | OTB pyramid: plan → commit → receipt; Canary enforces guardrails | OTB critical during spring build — cash flow negative in winter shoulder; spring overbuy risk is real |
+| O.4 PO recommendation + approval | Canary plan → buyer approval → Counterpoint PO | Buyer-in-Counterpoint-UI default (v2); Canary POST-back optional (v3+) |
+| O.5 PO generation + transmission | `DOC_TYP=PO` via Document POST or buyer UI | Large nurseries: EDI-capable; mid-tier: PDF/email; hobbyist: cash-and-paper — three vendor tiers |
+| O.6 Receiving + 3-way match | `DOC_TYP=RECVR`; PO qty vs receiver qty vs invoice | Receiver with thin metadata (paper invoice) is normal — flag-and-ingest, not reject |
+| O.7 Short-ship + RTV | `DOC_TYP=RTV` | Live-goods RTV (dead-on-arrival plants) creates specific RTV pattern; distinguish from standard merchandise RTV |
+| O.8 Promotional demand isolation | Cross-module contract with P (Pricing & Promotion) | Spring promotion lift must be quarantined from next-year base or replenishment double-orders |
 
 → [Full J article](J-forecast-order)
 
-### L2: S — Space, Range, Display ◐ Design complete
+### L2: S — Space ◐ Design complete
 
 > Assortment gatekeeper: no item enters a PO without S clearance. Counterpoint Item master is the substrate.
 
@@ -123,7 +123,7 @@ The Canary Retail Spine is a 13-module ARTS-native operating layer. On a Counter
 
 → [Full T article](T-transaction-pipeline)
 
-### L2: R — Customer ● Full (v1 minimal)
+### L2: C — Customer ● Full (v1 minimal)
 
 > Privacy-bounded customer registry from Counterpoint Customer records.
 
@@ -145,8 +145,8 @@ The Canary Retail Spine is a 13-module ARTS-native operating layer. On a Counter
 
 | L3 (key) | L&G relevance |
 |---|---|
-| C.2 B2B account risk scoring | Landscaper accounts = 20–40% of L&G revenue; Counterpoint surfaces tier pricing, not credit risk |
-| C.3 Cost-update publishing | Vendor cost changes from RECVR feed into COGS ledger |
+| M.2 B2B account risk scoring | Landscaper accounts = 20–40% of L&G revenue; Counterpoint surfaces tier pricing, not credit risk |
+| M.3 Cost-update publishing | Vendor cost changes from RECVR feed into COGS ledger |
 
 → [C stub](C-commercial)
 
@@ -154,7 +154,7 @@ The Canary Retail Spine is a 13-module ARTS-native operating layer. On a Counter
 
 ## L1: Workforce Management
 
-### L2: L — Labor & Workforce ◐ Design complete
+### L2: L — Labor ◐ Design complete
 
 > Labor scheduling and time-entry. Counterpoint has no labor endpoint; integration via Homebase/Deputy/TimeForge or Canary-native (strategic decision pending).
 
@@ -164,7 +164,7 @@ The Canary Retail Spine is a 13-module ARTS-native operating layer. On a Counter
 
 → [L stub](L-labor-workforce)
 
-### L2: W — Work Execution ◐ Capstone (design complete)
+### L2: W — Execution ◐ Capstone (design complete)
 
 > Cross-domain capstone: task orchestration, execution audit, reconciliation across all other modules.
 

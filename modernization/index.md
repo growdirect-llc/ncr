@@ -47,7 +47,7 @@ The technical entry is not an API gateway, a database connector, or a data wareh
 | **0 — Read-side observer** | Months 0-3 | MCP read tools (inventory lookup, transaction inquiry, customer history, OTB status, distribution recommendation, LP alert search), perpetual ledger as a shadow | System of record; Canary reads via REST + reconciles | "Our AI assistant can answer questions about my stores. We're seeing LP cases and OTB violations we couldn't see before." |
 | **1 — Spine of record** | Months 3-9 | Perpetual ledger becomes authoritative; cost truth, inventory position, OTB enforcement | Transactional front-end; pushes events to Canary; receives back-write for vendor PO release and item cost updates | "Inventory and cost truth live in Canary. Counterpoint is one input among many. Buyers plan in Canary, execute in Counterpoint." |
 | **2 — MCP gateway** | Months 9-18 | Canonical agentic + human interface; new apps target Canary, not Counterpoint | Wrapped as a legacy backend service consumed by Canary | "Our store managers, buyers, and back-office teams operate through Canary. Counterpoint is invisible." |
-| **3 — Module takeover** | Months 18-30 | Catalog, CRM, Purchasing, Forecast, Pricing fully native; Labor and Work Execution built where Counterpoint and adjacent platforms have no answer | Reduced to register transactions and edge-side execution | "We've stopped logging into Counterpoint for back-office work. Voyix renewal becomes optional." |
+| **3 — Module takeover** | Months 18-30 | Catalog, CRM, Purchasing, Forecast, Pricing fully native; Labor and Execution built where Counterpoint and adjacent platforms have no answer | Reduced to register transactions and edge-side execution | "We've stopped logging into Counterpoint for back-office work. Voyix renewal becomes optional." |
 | **4 — Front-end replacement** | Months 30-42 | Full platform end-to-end | Decommissioned, optionally; or kept as a register UI on a Canary backend if customer prefers | "We're on Canary. Counterpoint was the bridge, not the destination." |
 
 Each phase delivers standalone value and is a billable VAR engagement. No big-bang cutover.
@@ -83,7 +83,7 @@ Each phase is an engagement, with a distinct services profile:
 | 0 | Tenant standup, Counterpoint connector configuration, MCP rollout, initial training | Implementation fee + recurring platform subscription |
 | 1 | Ledger reconciliation, write-back proof, high-precision cost migration, controller/CFO sign-off | Major implementation fee + expanded subscription |
 | 2 | App migration, agentic workflow rollout, store-manager and back-office retraining | Multi-quarter implementation + subscription tier upgrade |
-| 3 | Native module deployment, Labor build, Work Execution rollout | Long engagement, multi-team training, subscription tier upgrade |
+| 3 | Native module deployment, Labor build, Execution rollout | Long engagement, multi-team training, subscription tier upgrade |
 | 4 | Counterpoint decommission, register UI cutover, Voyix license sunset planning | Significant migration engagement, multi-year platform subscription |
 
 Each phase opens a new services scope. Customer LTV across 36 months runs above a single-implementation Counterpoint engagement.
